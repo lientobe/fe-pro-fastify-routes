@@ -47,7 +47,7 @@ fastify.get('/users', (request, reply) => {
   else {
     const filteredUsers = usersArray.filter((user) => {
       return user[filter].toString() === value;
-    });
+  });
     return reply.send(filteredUsers);
   }
 });
